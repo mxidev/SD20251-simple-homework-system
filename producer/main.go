@@ -4,6 +4,8 @@ import (
 	"log"
 	"time"
 
+	"fmt"
+
 	"github.com/streadway/amqp"
 )
 
@@ -39,7 +41,7 @@ func main() {
 
 	// "Publicacion" de tareas
 	for i := 1; i <= 15; i++ {
-		body := "Tarea número " + time.Now().Format("15:04:05")
+		body := "Tarea número " + fmt.Sprint(i)
 		channel.Publish(
 			"",         // exchange
 			queue.Name, // routing key
