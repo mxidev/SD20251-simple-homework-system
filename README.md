@@ -13,7 +13,7 @@ Utiliza Go y RabbitMQ para la comunicación asincrónica entre producer y consum
 
 ### Estructura del proyecto:
 ```
-simple-homework-system/
+SD20251-simple-homework-system.git/
 ├── producer/
 │   └── main.go
 └── consumer/
@@ -29,12 +29,12 @@ sudo apt install rabbitmq-server
 
 1. Clonar el repositorio:
 ```
-git clone https://github.com/mxidev/simple-homework-system.git
+git clone https://github.com/mxidev/SD20251-simple-homework-system.git
 cd simple-homework-system
 ```
 2. Inicializar modulo Go
 ```
-go mod init <mod_name>
+go mod init simple-homework-system
 go mod tidy
 ```
 3. Instalacion de dependencia para utilizar RabbitMQ
