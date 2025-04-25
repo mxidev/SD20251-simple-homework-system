@@ -22,17 +22,31 @@ simple-homework-system/
 
 # Instrucciones para ejecutar el proyecto
 
+Es posible que requiera instalar rabbit en su sistema:
+```
+sudo apt install rabbitmq-server (Linux)
+```
+
 1. Clonar el repositorio:
 ```
 git clone https://github.com/tu-usuario/simple-homework-system.git
 cd simple-homework-system
 ```
-2. Ejecutar el consumer:
+2. Inicializar modulo Go
+```
+go mod init <mod_name>
+go mod tidy
+```
+3. Instalacion de dependencia para utilizar RabbitMQ
+```
+go get github.com/streadway/amqp
+```
+4. Ejecutar el consumer:
 ```
 cd consumer
 go run main.go
 ```
-3. Ejecutar el producer:
+5. Ejecutar el producer:
 ```
 cd producer
 go run main.go
