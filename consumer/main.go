@@ -37,7 +37,15 @@ func main() {
 	defer conn.Close()
 
 	// Consumir mensajes de la cola
-	msgs, err := channel.Consume(queue.Name, "", true, false, false, false, nil)
+	msgs, err := channel.Consume(
+		queue.Name, // queue
+		"",         // consumer
+		true,       // auto-ack
+		false,      // exclusive
+		false,      // no-local
+		false,      // no-wait
+		nil,        // args
+	)
 	if err != nil {
 		log.Fatalf(" Error al consumir la cola de mensajes: %v", err)
 	}
