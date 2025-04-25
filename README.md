@@ -20,11 +20,11 @@ simple-homework-system/
     └── main.go
 ```
 
-# Instrucciones para ejecutar los proyectos
+# Instrucciones para ejecutar el proyecto
 
 1. Clonar el repositorio:
 ```
-git clone [https://github.com/tu-usuario/simple-homework-system.git](https://github.com/mxidev/SD20251-simple-homework-system.git)
+git clone https://github.com/tu-usuario/simple-homework-system.git
 cd simple-homework-system
 ```
 2. Ejecutar el consumer:
