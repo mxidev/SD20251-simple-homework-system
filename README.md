@@ -1,6 +1,6 @@
 # Sistema asincronico simple utilizando GO y RabbitMQ
 
-Este proyecto simula un sistema donde se envian tareas a una cola de mensajes, la cual es consumida por un cliente para visualizar sus nombres respectivos.
+Este proyecto simula un sistema donde se envian tareas a una cola de mensajes, la cual es consumida por un cliente para visualizar sus nombres respectivos (Tarea 1, Tarea 2, ...).
 
 Utiliza Go y RabbitMQ para la comunicación asincrónica entre producer y consumer, **sin gRPC ni Docker**.
 
@@ -22,14 +22,14 @@ simple-homework-system/
 
 # Instrucciones para ejecutar el proyecto
 
-Es posible que requiera instalar rabbit en su sistema:
+Es posible que requiera instalar rabbit en su sistema (Linux):
 ```
-sudo apt install rabbitmq-server (Linux)
+sudo apt install rabbitmq-server
 ```
 
 1. Clonar el repositorio:
 ```
-git clone https://github.com/tu-usuario/simple-homework-system.git
+git clone https://github.com/mxidev/simple-homework-system.git
 cd simple-homework-system
 ```
 2. Inicializar modulo Go
