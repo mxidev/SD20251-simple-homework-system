@@ -30,7 +30,7 @@ sudo apt install rabbitmq-server
 1. Clonar el repositorio:
 ```
 git clone https://github.com/mxidev/SD20251-simple-homework-system.git
-cd simple-homework-system
+cd SD20251-simple-homework-system
 ```
 2. Inicializar modulo Go
 ```
